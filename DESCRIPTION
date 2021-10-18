@@ -1,0 +1,16 @@
+Package: progRchives
+Title: Scrape And Organize ProgArchives Data
+Version: 0.0.1
+Authors@R: 
+    person(given = "Mauricio",
+           family = "Schwartsman",
+           role = c("aut", "cre"),
+           email = "mauricio.schwartsman@outlook.com")
+Description: A collection of functions for scraping and organizing data from ProgArchives (http://www.progarchives.com/).
+Depends: R (>= 4.0.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: rvest, purrr, dplyr, stringr, tidyr, tidyselect, janitor, lubridate, future, furrr
