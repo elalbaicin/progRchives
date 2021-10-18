@@ -49,6 +49,13 @@ extract_subgenres <- function(){
 #' extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=35")
 extract_artist_urls <- function(url_genre){
   
+  # Check if url_artist is a subgenre page
+  if(str_detect(string = url_genre, pattern = "progarchives\\.com/subgenre\\.asp\\?style=[0-9]+$", negate = TRUE)){
+    
+    stop("Provided URL is not a ProgArchives subgenre URL.")
+    
+  }
+  
   # Load subgenre page
   genre_page <- read_html(url_genre,
                           encoding = "ISO-8859-1")
@@ -87,6 +94,7 @@ extract_artist_urls <- function(url_genre){
 #' @import lubridate
 #' @import janitor
 #' @import purrr
+#' @import stringr
 #'
 #' @export
 #' 
@@ -94,6 +102,13 @@ extract_artist_urls <- function(url_genre){
 #' extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=4398")
 #' extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=671")
 extract_album_data <- function(url_artist){
+  
+  # Check if url_artist is an artist page
+  if(str_detect(string = url_artist, pattern = "progarchives\\.com/artist\\.asp\\?id=[0-9]+$", negate = TRUE)){
+    
+    stop("Provided URL is not a ProgArchives artist URL.")
+    
+  }
   
   # Load artist page
   artist_page <- read_html(url_artist,
@@ -213,10 +228,13 @@ extract_album_data <- function(url_artist){
 #' extract_ratings(url_album = "http://www.progarchives.com/album.asp?id=22272")
 extract_ratings <- function(url_album){
   
-  # Return NULL if the album URL is unavailable
   if(is.na(url_album)){
     
     return(NULL)
+    
+  } else if(str_detect(string = url_album, pattern = "progarchives\\.com/album\\.asp\\?id=[0-9]+$", negate = TRUE)){
+    
+    stop("Provided URL is not a ProgArchives album URL.")
     
   }
   
