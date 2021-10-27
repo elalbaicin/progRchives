@@ -13,6 +13,6 @@ extract_album_data(url_artist)
 Scrape artist name and album data from an artist page as a data frame
 }
 \examples{
-extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=4398")
-extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=671")
+\dontrun{extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=4398")}
+\dontrun{extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=671")}
 }

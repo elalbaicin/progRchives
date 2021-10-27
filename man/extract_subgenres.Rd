@@ -10,5 +10,5 @@ extract_subgenres()
 Scrape all subgenre names and URLs from \href{http://www.progarchives.com/}{ProgArchives} as a dataframe
 }
 \examples{
-extract_subgenres()
+\dontrun{extract_subgenres()}
 }

@@ -6,10 +6,8 @@
 #' @import dplyr
 #' @import lubridate
 #'
-#' @export
-#'
 #' @examples
-#' extract_subgenres()
+#' \dontrun{extract_subgenres()}
 extract_subgenres <- function(){
   
   # Load main PA page
@@ -42,11 +40,9 @@ extract_subgenres <- function(){
 #' @import purrr
 #' @import stringr
 #'
-#' @export
-#'
 #' @examples
-#' extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=12")
-#' extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=35")
+#' \dontrun{extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=12")}
+#' \dontrun{extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=35")}
 extract_artist_urls <- function(url_genre){
   
   # Check if url_artist is a subgenre page
@@ -95,12 +91,10 @@ extract_artist_urls <- function(url_genre){
 #' @import janitor
 #' @import purrr
 #' @import stringr
-#'
-#' @export
 #' 
 #' @examples
-#' extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=4398")
-#' extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=671")
+#' \dontrun{extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=4398")}
+#' \dontrun{extract_album_data(url_artist = "http://www.progarchives.com/artist.asp?id=671")}
 extract_album_data <- function(url_artist){
   
   # Check if url_artist is an artist page

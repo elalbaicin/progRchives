@@ -13,6 +13,6 @@ extract_artist_urls(url_genre)
 Scrape all artist links and countries from a subgenre page as a dataframe
 }
 \examples{
-extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=12")
-extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=35")
+\dontrun{extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=12")}
+\dontrun{extract_artist_urls(url_genre = "http://www.progarchives.com/subgenre.asp?style=35")}
 }

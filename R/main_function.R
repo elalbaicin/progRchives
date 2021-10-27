@@ -14,7 +14,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' extract_genres()
+#' scrape_progarchives()
 #' }
 scrape_progarchives <- function(parallel = TRUE){
   

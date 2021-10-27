@@ -14,6 +14,6 @@ Extract subgenre, artist and album data from \href{http://www.progarchives.com/}
 }
 \examples{
 \dontrun{
-extract_genres()
+scrape_progarchives()
 }
 }
